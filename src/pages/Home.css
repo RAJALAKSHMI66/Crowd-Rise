@@ -1,0 +1,256 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container,
+.wrapper,
+.main,
+.app {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.banner-container {
+  position: relative;
+  width: 20%;
+  overflow: hidden;
+}
+
+.banner-container img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wave-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  animation: wave 2s infinite ease-in-out;
+}
+
+.wave-btn:hover {
+  background-color: #218838;
+}
+
+.about-us {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 50px 10%;
+  margin-top: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-us .image-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us .content-box {
+  max-width: 600px;
+}
+
+.about-us .content-box h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-us .content-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.about-us .content-box a {
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.my-5 {
+  margin: 50px 0;
+}
+
+.btn-success {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+  width: 100vw;
+  max-width: 100%;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+#bannerCarousel {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgb(255, 253, 253);
+}
+
+.donate-now-btn {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+.donate-now-btn:hover {
+  background-color: #218838;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+  width: 100vw;
+  max-width: 100%;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#bannerCarousel {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-indicators button {
+  text-decoration: none;
+  background-color: #007bff;
+  border: none;
+}
+
+.donate-now-btn {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+.donate-now-btn:hover {
+  text-decoration: none;
+  background-color: #218838;
+}
