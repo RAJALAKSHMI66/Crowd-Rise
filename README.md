@@ -1,4 +1,7 @@
 #AICTE internship project P1 by Rajalakshmi R and my AICTE internship id is INTERNSHIP_173892172667a5d6fed4b6a.
+#Crowdfunding Platform with React and ExpressJS Framework (P1)
+#The goal of this project is to develop a secure and user-friendly crowdfunding platform using React for the front end and ExpressJS for the back end, addressing the challenges of user authentication, project management, and payment processing. The platform will enable project creators to easily launch and manage their campaigns while allowing backers to discover, support, and engage with innovative ideas. Key features will include a robust search and filtering system, real-time communication between creators and backers, and comprehensive analytics for campaign performance, all while ensuring data security and compliance with financial regulations to foster trust and transparency in the crowdfunding process.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
