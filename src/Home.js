@@ -1,12 +1,18 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  return (
-    <div className="container mt-5">
-      <h1>Welcome to Crowdfunding</h1>
-      <p>Discover and support innovative projects.</p>
-    </div>
-  );
+    const navigate = useNavigate();
+
+    return (
+        <div className="home-container">
+            <h1>Welcome to Crowdfunding Platform</h1>
+            <p>Start your fundraising campaign today!</p>
+
+            <button className="start-campaign-button" onClick={() => navigate("/create-campaign")}>
+                Create a Campaign
+            </button>
+        </div>
+    );
 };
 
 export default Home;

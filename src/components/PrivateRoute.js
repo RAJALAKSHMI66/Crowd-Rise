@@ -1,27 +1,23 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import API from "../api/axiosInstance";
 
-const PrivateRoute = ({ children }) => {
-  const { auth } = useAuth();
+const PrivateRoute = () => {
+  const { user, loading } = useAuth();
 
-  // If not authenticated, redirect to login
-  if (!auth.isAuthenticated) {
-    return <Navigate to="/login" />;
-  }
+  if (loading) return <div>Loading...</div>;
 
-  return children;
+  return user ? <Outlet /> : <Navigate to="/login" />;
 };
 
-export const AdminRoute = ({ children }) => {
-  const { auth } = useAuth();
+// AdminRoute for admin-specific pages
+export const AdminRoute = () => {
+  const { user, loading } = useAuth();
 
-  // If the user is not an admin, redirect to the dashboard
-  if (!auth.isAdmin) {
-    return <Navigate to="/dashboard" />;
-  }
+  if (loading) return <div>Loading...</div>;
 
-  return children;
+  return user?.role === "admin" ? <Outlet /> : <Navigate to="/unauthorized" />;
 };
 
 export default PrivateRoute;

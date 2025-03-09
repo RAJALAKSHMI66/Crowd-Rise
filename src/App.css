@@ -39,3 +39,17 @@
 body {
   padding-top: 80px; 
 }
+.start-campaign-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-campaign-button:hover {
+  background-color: #0056b3;
+}

@@ -1,67 +1,111 @@
+/* Background similar to login page */
+.create-campaign-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 20px;
+}
+
+/* Centered container with subtle shadow */
 .create-campaign-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-  }
-  
-  .create-campaign-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .create-campaign-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .create-campaign-form .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .create-campaign-form .form-group input,
-  .create-campaign-form .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  .create-campaign-form button {
-    text-decoration: none;
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .create-campaign-form button:hover {
-    text-decoration: none;
-    background-color: #0056b3;
-  }
-  .campaigns-container {
-    padding-top: 80px; 
-  }
-  body {
-    padding-top: 80px; 
-  }
-  .card-img-top {
-    height: 200px; 
-    object-fit: cover; 
-  }
-  .campaign-img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-  
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.create-campaign-form:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Form title styling */
+.create-campaign-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form group styling */
+.create-campaign-form .form-group {
+  margin-bottom: 18px;
+}
+
+/* Label styling */
+.create-campaign-form .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Input & Textarea styling */
+.create-campaign-form .form-group input,
+.create-campaign-form .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.create-campaign-form .form-group input:focus,
+.create-campaign-form .form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styling */
+.create-campaign-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.create-campaign-form button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: scale(1.02);
+}
+
+/* Add spacing from navbar */
+.campaigns-container, body {
+  padding-top: 90px;
+}
+
+/* Card image styling */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Campaign image styling */
+.campaign-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.campaign-img:hover {
+  transform: scale(1.05);
+}
